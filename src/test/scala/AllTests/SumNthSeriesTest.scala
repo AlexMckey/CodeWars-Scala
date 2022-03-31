@@ -13,7 +13,7 @@ class SumNthSeriesTest extends flatspec.AnyFlatSpec with should.Matchers {
   tests.foreach {
     case (input, expected) =>
       s"seriesSum($input)" should s"return $expected" in {
-        Kata.seriesSum(input) should be (expected)
+        SumNthSeries.seriesSum(input) should be (expected)
       }
   }
 }
